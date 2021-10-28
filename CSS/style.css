@@ -15,3 +15,11 @@ h1 {
   padding-left: 1.25rem;
   font-size: x-large;
 }
+.Experiences {
+  padding-left: 0.5rem;
+  font-size: larger;
+}
+.Background {
+  background-image: url(../AshenOne.svg);
+  background-repeat: no-repeat;
+}
