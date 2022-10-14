@@ -1,0 +1,24 @@
+{
+  "name": "wu1-cv-beepingseath",
+  "version": "1.0.0",
+  "description": "* Komponenter, planera vilka delar din sida består av. * Struktur, vilka strukturella element använder sidan. * Design * Färger. * Typsnitt, serif eller sans serif. Font. * Visuella element (vad får din sida att stå ut). * Din logotyp (från digitalt skapande). * Minst en bild (redigerad för att passa arbetet, tänk på copyright). Planera för den.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeepingSeath/wu1-cv-BeepingSeath.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeepingSeath/wu1-cv-BeepingSeath/issues"
+  },
+  "homepage": "https://github.com/BeepingSeath/wu1-cv-BeepingSeath#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
