@@ -1,25 +1,79 @@
-.flip-horizontally {
-    transform: scaleX(-1);
-  }
-.record_header{
-    display: flex;
+body {
+  background-color: #191918;
+  color: #efefef;
 }
+a {
+  color: #efefef;
+}
+a:hover {
+  color: #999999;
+}
+
 .container {
-  font-family: 'Volkhov', serif;
+  width: min(80ch, 100vw - 2rem);
+  margin-inline: auto;
 }
-h1 {
-  font-size: xx-large;
+
+.navbar {
+  display: flex;
+  flex-wrap: warp;
+  align-items: center;
+  justify-content: space-between;
+
 }
-.CI-List {
+.navbar__button {
+  background-color: transparent;
+  color: #efefef;
+  border-color: #efefef;
+}
+@media (min-width: 600px) {
+  .navbar__button {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .navbar__collapse {
+    display: none;
+  }
+}
+.navbar__collapse > ul {
+  display: flex;
+  gap: 1rem;
   list-style: none;
-  padding-left: 1.25rem;
-  font-size: x-large;
 }
-.Experiences {
-  padding-left: 0.5rem;
-  font-size: larger;
+.navbar__collapse--show {
+  display: block;
+  width: 100%;
 }
-.Background {
-  background-image: url(../AshenOne.svg);
-  background-repeat: no-repeat;
+.navbar__collapse--show > ul {
+  flex-direction: column;
+  padding: 0;
+}
+
+.hero {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "stack";
+}
+.hero > * {
+  grid-area: stack;
+}
+.hero h1 {
+  color: #efefef;
+  place-self: center;
+}
+
+.filter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

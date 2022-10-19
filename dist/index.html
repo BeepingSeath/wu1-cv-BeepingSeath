@@ -1,138 +1,42 @@
 <!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Kom igång med Eleventy</title>
-</head>
-<body>
-    
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fictional-CV</title>
 </head>
-<body class="container">
-    <header class="record_header">
-        <img src="images/AshenOneProfile.png" style="transform: scaleX(-1);">
-        <aside>
-            <h1 style="padding-left: 1rem;">
-                Ashen One
-            </h1>
-            <section class="CI-List">
-                <li>
-                    Phone: +23 802 20 16
-                </li>
-                <li> </li>
-                <li>
-                    Email: Ashen.One@Lmail.lo
-                </li>
-                <li> </li>
-                <li>
-                    Twitter: @Ashen1
-                </li>
-            </section>
-            
-        </aside>
-        <aside style="padding-left: 2rem;"><div style="border-left:1px solid #000;height:500px"></div></aside>
-        <aside style="padding-left: 2rem;">
-            <h1 style="padding-left: 1rem;">
-                Education
-            </h1>
-            <section class="CI-List">
-                <li>Firelink Shrine</li>
-                <li><hr></li>
-                <li>Pyromancies</li>
-                <li>Sorceries</li>
-                <li>Miracles</li>
-                <li>Strengthening of the soul and body</li>
-            </section>
-            <h1 style="padding-left: 1rem;">
-                References
-            </h1>
-            <section class="CI-List">
-                <li>Irina of Carim - Master</li>
-                <li>Fire Keeper - Servant</li>
-                <li>Siegward of Catarina - Companion</li>
-                <li>5787 - Patient</li>
-            </section>
-        </aside>
-        <aside style="padding-left: 5rem;"> 
-            <h1 style="padding-left: 1rem;">
-                Skills
-            </h1>
-            <section style="font-size: larger;">
-                <li>Weapon Mastery</li>
-                <li>Pyromancies</li>
-                <li>Sorceries</li>
-                <li>Miracles</li>
-                <li>Teleportation</li>
-                <li>Limitless healing</li>
-                <li>English (Telepathy)</li>
-            </section>
-    </header>
-    <section class="record_header">
-        <aside style="padding-left: 4rem;">
-            <h1>
-                Creation of a World
-            </h1>
-                <section class="Experiences">
-                    <li>Freeing the world from chaos demons</li>
-                    <li>Slaying a dragon consumed by darkness</li>
-                    <li>Waking a princess from eternal slumber</li>
-                    <li>Helping with putting an old man to rest</li>
-                </section>
-        </aside>
-    <aside style="padding-left: 9rem;">
-        <h1>Linking of the Flame</h1>
-        <section class="Experiences">
-            <li>Collecting the ashes of the four lords of cinders</li>
-            <li>Saving Siegward multiple times</li>
-            <li>Helping a knight with her revenge</li>
-            <li>Calming the wrath of lords</li>
+<body>
+    <nav class="navbar container">
+        <a href="../index.html" class="logo">Logo</a>
+        <button class="navbar__button">
+            BorgirButton
+        </button>
+        <div class="navbar__collapse">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../education/index.html">Education & Skills</a></li>
+                <li><a href="../experiences/index.html">Experiences</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container flow">
+        <header class="hero">
+            <img src="../images/AshenOneProfile.png" alt="AshenOneProfile">
+            <div class="filter"></div>
+            <h1>Ashen One</h1>
+        </header>
+        <section>
+            <h2>Ashen One</h2>
+            <p>Phone +23 802 20 16</p>
+            <p>Email: Ashen.One@Lmail.lo</p>
+            <p>Twitter: @Ashen1</p>
         </section>
-    </aside>
-    <aside style="padding-left: 2rem;"><div style="border-left:1px solid #000;height:250px"></div></aside>
-    </section>
-    <section class="record_header">
-        <aside style="padding-left: 4rem;">
-            <h1>
-                Ending the Age of Fire
-            </h1>
-                <section class="Experiences">
-                    <li>Collecting the ashes of the four lords of cinders</li>
-                    <li>Ending the life of a maddened king</li>
-                    <li>Blessing a blind maiden with eyesight</li>
-                    <li>Granting humanity immortality</li>
-                </section>
-        </aside>
-        <aside style="padding-left: 5rem;">
-            <h1>Linking of the Flame</h1>
-            <section class="Experiences">
-                <li>Collecting the ashes of the four lords of cinders</li>
-                <li>Saving a dying pilgrim</li>
-                <li>Getting married</li>
-                <li>Becoming ruler of all of humanity</li>
-            </section>
-        </aside>
-        <aside style="padding-left: 2rem;"><div style="border-left:1px solid #000;height:210px"></div></aside>
-        <aside>
-            <section>
-                <img src="AshenOne.svg" alt="">
-            </section>
-        </aside>
-    </section>
-</body>
-</html> 
+    </main>
+    <footer class="container">
+        <p>Copyright 2022 Seth</p>
+    </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
