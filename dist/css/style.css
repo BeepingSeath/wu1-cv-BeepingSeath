@@ -2,9 +2,11 @@ body {
   background-color: #191918;
   color: #efefef;
 }
+
 a {
   color: #efefef;
 }
+
 a:hover {
   color: #999999;
 }
@@ -19,13 +21,14 @@ a:hover {
   flex-wrap: warp;
   align-items: center;
   justify-content: space-between;
-
 }
+
 .navbar__button {
   background-color: transparent;
   color: #efefef;
   border-color: #efefef;
 }
+
 @media (min-width: 600px) {
   .navbar__button {
     display: none;
@@ -41,10 +44,12 @@ a:hover {
   gap: 1rem;
   list-style: none;
 }
+
 .navbar__collapse--show {
   display: block;
   width: 100%;
 }
+
 .navbar__collapse--show > ul {
   flex-direction: column;
   padding: 0;
@@ -55,9 +60,11 @@ a:hover {
   justify-content: center;
   grid-template-areas: "stack";
 }
+
 .hero > * {
   grid-area: stack;
 }
+
 .hero h1 {
   color: #efefef;
   place-self: center;

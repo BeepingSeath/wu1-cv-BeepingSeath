@@ -4,12 +4,12 @@
   "description": "* Komponenter, planera vilka delar din sida består av. * Struktur, vilka strukturella element använder sidan. * Design * Färger. * Typsnitt, serif eller sans serif. Font. * Visuella element (vad får din sida att stå ut). * Din logotyp (från digitalt skapande). * Minst en bild (redigerad för att passa arbetet, tänk på copyright). Planera för den.",
   "main": "index.js",
   "scripts": {
-        "watch:sass": "sass  --no-source-map --watch src/sass:dist/css",
-        "watch:eleventy": "eleventy --serve",
-        "build:sass": "sass  --no-source-map src/sass:dist/css",
-        "build:eleventy": "eleventy",
-        "start": "npm-run-all build:sass --parallel watch:*",
-        "build": "npm-run-all build:sass build:eleventy"
+    "watch:sass": "sass  --no-source-map --watch src/sass:dist/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass  --no-source-map src/sass:dist/css",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass build:eleventy"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/BeepingSeath/wu1-cv-BeepingSeath#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.55.0"
   }
 }
